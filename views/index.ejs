@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <h1>FX Trading Platform</h1>
+    <div id="user-trading-window">
+      <div id="trade">
+        <div id="rate"></div><input type="checkbox" id="update-rate" value="Bike">
+        <input id="currency" type="text" placeholder="currency code"/>
+        <input id="handle" type="text" placeholder="Handle"/>
+        <button id="send">Send</button>
+      </div>
+    </div>
+  <script src="/client.js"></script>
+  </body>
+</html>

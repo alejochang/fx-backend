@@ -1,0 +1,30 @@
+{
+  "name": "fx-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run start:dev | npm run start-socket",
+    "start:prod": "node ./bin/www",
+    "start:dev": "set NODE_ENV=dev && node ./bin/www",
+    "start-socket": "node ./socket-service/index",
+    "test": "mocha --exit --timeout 10000"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^1.30.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "mysql": "^2.15.0",
+    "socket.io": "2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.2.0"
+  }
+}
